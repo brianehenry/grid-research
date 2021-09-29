@@ -5,7 +5,7 @@ import { RowModel } from './row-model';
   providedIn: 'root'
 })
 export class GridDataService {
-  public numRows: number = 1;
+  public numRows: number = 100;
 
   constructor() { }
 

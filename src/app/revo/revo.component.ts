@@ -18,7 +18,8 @@ export class RevoComponent implements AfterViewInit {
       name: 'Name'
     }, {
       prop: 'asdf',
-      name: 'Asdf'
+      name: 'Asdf',
+      size: 200
     }];
     this.grid.nativeElement.source = this.gridDataService.getData();
   }
