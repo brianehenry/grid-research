@@ -14,7 +14,17 @@ export class GridDataService {
     for (let i = 0; i < this.numRows; i++) {
       data.push({
         name: `System ${i}`,
-        asdf: 'asdf'
+        field1: `asdf ${i}`,
+        field2: `asdfasdfasdfasdfasdfasdfasdfasdf ${i}`,
+        field3: `asdf ${i}`,
+        groupField1: `Area ${(i % 3) + 1}`,
+        groupField2: `Section ${(i % 5) + 1}`,
+        dateField: new Date(Date.now() - Math.floor(Math.random() * 1000000000)),
+        tempField1: 80 - Math.random() * 50,
+        tempField2: 80 - Math.random() * 50,
+        booleanField1: Math.random() > .5,
+        booleanField2: Math.random() > .5,
+        enumField: Math.floor(Math.random() * 3)
       });
     }
     return data;
